@@ -1,0 +1,4365 @@
+html {
+    line-height: 1.15;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'fsbook', sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+    /* 1 */
+    display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+    margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 1 */
+    overflow: visible;
+    /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+    text-decoration: none;
+    background-color: transparent;
+    /* 1 */
+    -webkit-text-decoration-skip: objects;
+    /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+    border-bottom: none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+    font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+    border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: sans-serif;
+    /* 1 */
+    font-size: 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin: 0;
+    /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+    box-sizing: border-box;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    display: table;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+    display: inline-block;
+    /* 1 */
+    vertical-align: baseline;
+    /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset: -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font: inherit;
+    /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+    display: list-item;
+}
+
+/* Scripting
+     ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+    display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+    display: none;
+}
+
+/* Hidden
+     ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+*:focus {
+    outline: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    text-shadow: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'fsbook';
+    src: url('fonts/FiraSans-Book.woff2') format('woff2'),
+    url('fonts/FiraSans-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fslight';
+    src: url('fonts/FiraSans-Light.woff2') format('woff2'),
+    url('fonts/FiraSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fsregular';
+    src: url('fonts/FiraSans-Regular.woff2') format('woff2'),
+    url('fonts/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fsmedium';
+    src: url('fonts/FiraSans-Medium.woff2') format('woff2'),
+    url('fonts/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fssemibold';
+    src: url('fonts/FiraSans-SemiBold.woff2') format('woff2'),
+    url('fonts/FiraSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fsbold';
+    src: url('fonts/FiraSans-Bold.woff2') format('woff2'),
+    url('fonts/FiraSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'fsextrabold';
+    src: url('fonts/FiraSans-ExtraBold.woff2') format('woff2'),
+    url('fonts/FiraSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*
+============================================
+VARIABLES
+============================================
+*/
+:root {
+    --header-bg-color: #F7F3EA;
+}
+
+.dark {
+    --header-bg-color: #000;
+}
+
+/*
+============================================
+GENERAL
+============================================
+*/
+.header {
+    float: left;
+    width: 100%;
+    min-height: 70px;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--header-bg-color);
+}
+
+.header > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 16px 20px;
+}
+
+.header > div > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-size: 30px;
+    color: #584A29;
+    font-weight: 400;
+}
+
+.header > div .navigation {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header > div .navigation > ul {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+}
+.header.loggedin > div .navigation > ul {
+    margin: 4px 0px 0px 0px;
+}
+.header > div .navigation > ul > li {
+    float: left;
+    margin: 0px;
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.header > div .navigation > ul > li:last-of-type {
+    padding-right: 0px;
+}
+
+.header > div .navigation > ul > li > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584A29;
+}
+
+.header.transparent {
+    background-color: transparent;
+}
+.header > div .profile-actions {
+    float: left;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    position: relative;
+}
+.header > div .profile-actions > span {
+    float: left;
+    width: 100%;
+    max-width: 34px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.header > div .profile-actions > span > img {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100%;
+}
+.header > div .profile-actions > span:hover ~ ul {
+    display: block;
+}
+.header > div .profile-actions > ul {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 35px;
+    right: 0px;
+    margin: 0px;
+    padding: 5px;
+    background-color: #eee8d9;
+    border-radius: 10px;
+    z-index: 1001;
+}
+.header > div .profile-actions > ul:before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0px;
+    width: 100%;
+    height: 11px;
+}
+.header > div .profile-actions > ul:hover {
+    display: block;
+}
+.header > div .profile-actions > ul > li {
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+}
+.header > div .profile-actions > ul > li > a {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 25px;
+    text-decoration: none;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #584a29;
+    position: relative;
+}
+.header > div .profile-actions > ul > li > a > i {
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    font-size: 15px;
+    text-align: center;
+    width: 15px;
+}
+.header > div .profile-actions > ul > li > button {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 25px;
+    text-decoration: none;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #584a29;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0px;
+    text-align: left;
+}
+.header > div .profile-actions > ul > li > button > i { 
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    font-size: 18px;
+    text-align: center;
+    width: 15px;
+}
+.footer {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F3EA;
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+}
+.footer > div {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-width: 1200px;
+}
+.footer > div ul.footer-navigation {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 35px 0px;
+    text-align: center;
+}
+.footer > div ul.footer-navigation > li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 15px;
+    list-style: none;
+}
+.footer > div ul.footer-navigation > li > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584A29;
+}
+
+/* notification messages */
+.notification-messages  {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 320px;
+}
+.notification-messages > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 5px 0px;
+}
+
+.notification-message {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 42px;
+    position: relative;
+}
+.notification-message > span {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 20px;
+    color: #9a315a;
+}
+.notification-message > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #972b54;
+}
+.notification-message > p > span {
+    font-family: 'fsbold';
+    font-size: 18px;
+}
+
+.notification-message.saved {
+    background-color: #cdf3f7;
+}
+.notification-message.saved > p, .notification-message.saved > span > i {
+    color: #043a40;
+}
+.notification-message.activated {
+    background-color: #d3e8bb;
+}
+.notification-message.activated > p, .notification-message.activated > span > i {
+    color: #22350c;
+}
+.notification-message.scheduled {
+    background-color: #ffe6a9;
+}
+.notification-message.scheduled > p, .notification-message.scheduled > span > i {
+    color: #844a00;
+}
+/* report a bug  */
+.report-bug {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1001;
+}
+.report-bug > a {
+    float: left;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #E382A7;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.bug-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: rgba(88, 74, 41, 0.7);
+    z-index: 1000;
+}
+.bug-modal > div {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin: 80px 0px 0px 0px;
+    padding: 50px;
+    position: relative;
+}
+.bug-modal > div > h2 {
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'fssemibold';
+  font-weight: 400;
+  font-size: 28px;
+  color: #5b5b5b;
+  text-align: left;
+}
+.bug-modal > div > p {
+    float: left;
+    width: 100%;
+    margin: 7px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+    text-align: left;
+    line-height: 140%;
+}
+.bug-modal > div > .bug-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.bug-modal > div > .bug-modal-close > span {
+    font-size: 24px;
+    color: #cac6bd;
+}
+.bug-modal > div > div > .bug-form-group {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+}
+.bug-modal > div > div > .bug-form-group > label {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.bug-modal > div > div > .bug-form-group > input[type="text"] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+}
+.bug-modal > div > div > .bug-form-group > textarea {
+    float: left;
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+    resize: none;
+}
+.bug-modal > div > div > .bug-form-group > button.bug-send-btn {
+    float: right;
+    width: 50%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #E382A7;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    border: 0px;
+}
+/* pagination  */
+.pagination-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 40px 0px 60px;
+    text-align: center;
+}
+.pagination-wrapper > ul.pagination {
+    display: inline-block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.pagination-wrapper > ul.pagination > li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 10px;
+    list-style: none;
+}
+.pagination-wrapper > ul.pagination > li > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #bdbdbd;
+}
+.pagination-wrapper > ul.pagination > li.active > a {
+    font-family: 'fsbold';
+    color: #E382A7;
+}
+
+/*
+============================================
+HOMEPAGE
+============================================
+*/
+
+/* hero section  */
+.hero-section {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 150px 20px;
+    text-align: center;
+    background-color: #F7F3EA;
+}
+
+.hero-section > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px 600px 0px 0px;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.hero-section > div > img {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+
+.hero-section > div .hs-info {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-section > div .hs-info > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px 0px 48px;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #8E7E58;
+    line-height: 130%;
+    position: relative;
+}
+
+.hero-section > div .hs-info > span > img {
+    position: absolute;
+    top: -1px;
+    left: 20px;
+    height: 20px;
+}
+
+.hero-section > div .hs-info > h1 {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 20px;
+    font-family: 'fssemibold';
+    font-size: 42px;
+    color: #584A29;
+    font-weight: 400;
+}
+
+.hero-section > div .hs-info > p {
+    float: left;
+    width: 100%;
+    max-width: 550px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 20px;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #8E7E58;
+    line-height: 150%;
+}
+
+.hero-section > div .hs-info > span:last-of-type {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.hero-section > div .hs-info .request-access {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-section > div .hs-info .request-access .ra-form-group {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 10px 195px 10px 10px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.hero-section > div .hs-info .request-access .ra-form-group > input[type="text"] {
+    float: left;
+    width: 100%;
+    height: 65px;
+    margin: 0px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #BEBEBE;
+    border: 0px;
+}
+
+.hero-section > div .hs-info .request-access .ra-form-group > button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 175px;
+    height: 65px;
+    background-color: #E382A7;
+    border: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* sources showcase  */
+.sources-showcase {
+    float: left;
+    margin: 0px;
+    padding: 100px 0px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.sources-showcase > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.sources-showcase > div h2 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+
+.sources-showcase > div p {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #6c6c6c;
+    line-height: 150%;
+}
+
+.sources-showcase > div ul {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.sources-showcase > div ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+}
+.sources-showcase > div ul > li > img {
+    float: left;
+    width: 68px;
+    height: 68px;
+    background-color: #E5E5E5;
+    border-radius: 100%;
+}
+
+/* brief info  */
+.brief-info {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 0px;
+    text-align: center;
+    background-color: #FFF8FB;
+}
+
+.brief-info > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.brief-info > div .brief-info-tile {
+    float: left;
+    width: 33%;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+.brief-info > div .brief-info-tile > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.brief-info > div .brief-info-tile > div h3 {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 22px;
+    color: #5D2A40;
+}
+
+.brief-info > div .brief-info-tile > div p {
+    float: left;
+    width: 100%;
+    margin: 15px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #AA6382;
+    line-height: 150%;
+}
+
+.brief-info > div .brief-info-tile:last-of-type > div > img {
+    margin-top: 10px;
+}
+
+.brief-info > div .brief-info-tile:last-of-type > div > h3 {
+    margin-top: 17px;
+}
+
+/* content creator cta  */
+.content-creator-cta {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.content-creator-cta > div {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 240px 0px 0px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+}
+
+.content-creator-cta > div h3 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 26px;
+    color: #5b5b5b;
+}
+
+.content-creator-cta > div p {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #6c6c6c;
+    line-height: 150%;
+}
+
+.content-creator-cta > div a {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 175px;
+    height: 65px;
+    background-color: #E382A7;
+    border: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* let's connect modal  */
+.connect-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: rgba(88, 74, 41, 0.7);
+    z-index: 1000;
+}
+.connect-modal > div {
+    display: inline-block;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    margin: 80px 0px 0px 0px;
+    padding: 50px;
+    position: relative;
+}
+.connect-modal > div > h2 {
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'fssemibold';
+  font-weight: 400;
+  font-size: 28px;
+  color: #5b5b5b;
+  text-align: left;
+}
+.connect-modal > div > p {
+    float: left;
+    width: 100%;
+    margin: 7px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+    text-align: left;
+    line-height: 140%;
+}
+.connect-modal > div > .connect-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.connect-modal > div > .connect-modal-close > span {
+    font-size: 24px;
+    color: #cac6bd;
+}
+.connect-modal > div > div > .connect-form-group {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+}
+.connect-modal > div > div > .connect-form-group > label {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.connect-modal > div > div > .connect-form-group > input[type="text"] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+}
+.connect-modal > div > div > .connect-form-group > textarea {
+    float: left;
+    width: 100%;
+    height: 160px;
+    margin: 0px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+    resize: none;
+}
+.connect-modal > div > div > .connect-form-group > button.connect-send-btn {
+    float: right;
+    width: 50%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #E382A7;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    border: 0px;
+}
+
+
+/*
+============================================
+CREATE NEWSLETTER
+============================================
+*/
+.create-newsletter-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.create-newsletter-wrapper > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+}
+
+.create-newsletter-wrapper > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+
+.create-newsletter-wrapper > div > p {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #6c6c6c;
+}
+
+.create-newsletter-wrapper .create-newsletter {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.create-newsletter-wrapper .create-newsletter .cn-source {
+    float: left;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.create-newsletter-wrapper .create-newsletter .cn-add-source {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+}
+
+.create-newsletter-wrapper .create-newsletter .cn-add-source a.cn-addsrc-btn {
+    display: inline-block;
+    margin: 60px 0px 0px 0px;
+    padding: 5px;
+    width: 26px;
+    height: 26px;
+    line-height: 15px;
+    background-color: #E382A7;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+.create-newsletter-wrapper .create-newsletter .cn-add-source a.cn-addsrc-btn:before {
+    width: 26px;
+    height: 26px;
+    content: "";
+    top: -7px;
+    left: -7px;
+    border: 7px solid #F0B5CC;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    animation: ping 3s infinite;
+    border-radius: 3px;
+    overflow: hidden;
+}
+@keyframes ping {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.create-newsletter-wrapper .create-newsletter .cn-add-source a.cn-addsrc-btn:after {
+    position: absolute;
+    bottom: -80px;
+    left: -30px;
+    margin: 0px;
+    padding: 3px 10px;
+    background-color: #E382A7;
+    color: #ffffff;
+    font-family: 'fssemibold';
+    font-size: 13px;
+    white-space: nowrap;
+    transition: .2s;
+    content: "Add Source";
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 3px;
+    cursor: default;
+}
+.create-newsletter-wrapper .create-newsletter .cn-add-source a.cn-addsrc-btn:hover:after {
+    bottom: -40px;
+    opacity: 0.5;
+    visibility: visible;
+}
+
+@keyframes leftRight {
+  0% {
+    left: 50px;
+  }
+  50% {
+    left:  40px;
+  }
+  100% {
+    left: 50px;
+  }
+}
+
+.cn-source .cn-src-title {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 150px 20px 50px;
+    position: relative;
+    border-bottom: 1px solid #ededed;
+}
+
+.cn-source .cn-src-title .actions {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.cn-source .cn-src-title .actions > ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-title .actions > ul > li {
+    float: left;
+    margin: 0px;
+    padding: 0px 7px;
+    list-style: none;
+    position: relative;
+}
+
+.cn-source .cn-src-title .actions > ul > li > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 20px;
+    cursor: pointer;
+}
+span.src-actions-tooltip {
+    position: absolute;
+    top: -35px;
+    right: -2px;
+    margin: 0px;
+    padding: 6px 10px;
+    background-color: #584A29;
+    color: #ffffff;
+    font-family: 'fssemibold';
+    font-size: 13px;
+    white-space: nowrap;
+    transition: .2s;
+    opacity: 0;
+}
+span.src-actions-tooltip:after {
+    content: "";
+    border-top: 8px solid #584A29;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    right: 10px;
+}
+
+
+.cn-source .cn-src-title .actions > ul > li > a:hover ~ span.src-actions-tooltip {
+    opacity: 1;
+}
+.cn-source .cn-src-title .cn-src-logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.cn-source .cn-src-title .cn-src-logo > img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-title > h2 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 9px 0px;
+    text-align: left;
+    font-family: 'fssemibold';
+    font-size: 22px;
+    font-weight: 400;
+    color: #5b5b5b;
+}
+
+.cn-source .cn-src-content-wrapper {
+    float: left;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.cn-source .cn-src-content-wrapper > div {
+    float: left;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-content-wrapper > div:first-of-type {
+    margin-top: 0px;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content-header {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content-header > h3 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 20px;
+    color: #5b5b5b;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content-header .ch-published {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content-header .ch-published span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 13px;
+    color: #6c6c6c;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content {
+    float: left;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+
+.cn-source .cn-src-content-wrapper .cn-src-content > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 150%;
+}
+
+.source-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: rgba(88, 74, 41, 0.7);
+    z-index: 1000;
+}
+.pick-source {
+    display: inline-block;
+    width: 100%;
+    max-width: 745px;
+    padding: 40px;
+    margin: 0px;
+    text-align: left;
+}
+.pick-source > div {
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    position: relative;
+}
+.pick-source > div > .source-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.pick-source > div > .source-modal-close > span {
+    font-size: 24px;
+    color: #cac6bd;
+}
+.pick-source > div > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 28px;
+    color: #5b5b5b;
+}
+
+.pick-source > div > p {
+    float: left;
+    width: 100%;
+    margin: 7px 0px 0px;
+    padding: 0px 10px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+}
+
+.pick-source > div > div {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+.pick-source > div > div > ul {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.pick-source > div > div > ul > li {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    padding: 10px;
+    list-style: none;
+}
+.pick-source > div > div > ul > li > button {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: #F7F3EA;
+    min-height: 100px;
+    padding: 0;
+    position: relative;
+    border-radius: 3px;
+    text-align: left;
+    cursor: pointer;
+}
+.pick-source > div > div > ul > li > button > div {
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    margin: 0px;
+    padding: 20px 20px 20px 105px;
+}
+.pick-source > div > div > ul > li > button > div > .source-image {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    width: 65px;
+    height: 65px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pick-source > div > div > ul > li > button > div > span {
+    float: left;
+    width: 100%;
+    margin: 3px 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-size: 16px;
+    color: #584A29;
+}
+
+.pick-source > div > div > ul > li > button > div > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    line-height: 130%;
+    color: #8E7E58;
+}
+
+.pick-source > div > div > .more-sources-info {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    background-color: #c7eaee;
+    color: #0e5a80;
+}
+/* delete source  */
+.delete-source {
+    display: inline-block;
+    width: 100%;
+    max-width: 325px;
+    padding: 40px;
+    margin: 100px 0px 0px 0px;
+    text-align: left;
+}
+.delete-source  > div {
+    background-color: #ffffff;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 30px;
+    position: relative;
+}
+.delete-source  > div > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+    text-align: center;
+    line-height: 150%;
+}
+.delete-source  > div > ul {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+}
+.delete-source  > div > ul > li {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.delete-source  > div > ul > li:first-of-type {
+    padding-right: 5px;
+}
+.delete-source  > div > ul > li:last-of-type {
+    padding-left: 5px;
+}
+.delete-source  > div > ul > li > button {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border:  0px;
+    height: 30px;
+    background-color: #bfbfbf;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 16px;
+}
+.delete-source  > div > ul > li > button.source-delete-btn {
+    background-color: #D9434D;
+}
+
+.cn-edit-source {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.cn-edit-source > div {
+    float: right;
+    margin: 0px;
+    padding: 12px;
+    background-color: #ffffff;
+}
+
+.cn-edit-source > div .form-group {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.cn-edit-source > div .form-group > span {
+    float: left;
+    margin: 5px 10px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 13px;
+    color: #6c6c6c;
+    text-align: right;
+}
+
+.cn-edit-source > div .form-group > input {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    padding: 0px 15px;
+    width: 100%;
+    max-width: 50px;
+    height: 25px;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    font-family: 'fsbold';
+    color: #5b5b5b;
+}
+
+.cn-edit-source > div button {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: #E382A7;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 4px;
+}
+
+/* Newsletter control  */
+.newsletter-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+    width: 130px;
+    z-index: 1000;
+}
+.newsletter-control > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.newsletter-control > div > ul {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.newsletter-control > div > ul > li {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    list-style: none;
+    position: relative;
+}
+.newsletter-control > div > ul > li > button {
+    float: left;
+    width: 100%;
+    height: 40px;
+    margin: 0px;
+    padding: 0px 15px;
+    border: 0px;
+    cursor: pointer;
+    text-align: left;
+    font-family: 'fssemibold';
+    font-size: 15px;
+    transition: .2s;
+}
+.newsletter-control > div > ul > li > button:hover {
+    transition: .2s;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    transform: scale(1.07);
+}
+.newsletter-control > div > ul > li > button.schedule {
+    background-color: #ffc63e;
+    color: #593f00;
+}
+.newsletter-control > div > ul > li > button.save {
+    background-color: #6bd6e1;
+    color: #043a40;
+}
+.newsletter-control > div > ul > li > button.activate {
+    background-color: #acd976;
+    color: #22350c;
+}
+.newsletter-control > div > ul > li > button > i {
+    margin-right: 8px;
+}
+
+/* Schedule */
+.schedule-options {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    width: 175px;
+    padding: 0px;
+    z-index: 1000;
+}
+.schedule-options > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    border:  1px solid #ededed;
+    background-color: #ffffff;
+}
+.schedule-options > div > span {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    color: #584A29;
+    font-size: 18px;
+    clear: both;
+}
+.schedule-options > div > div {
+    float: left;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    clear: both;
+}
+.schedule-options > div > div .selector {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 2px;
+    border: 1px solid #E382A7;
+    transition: .3s;
+}
+.schedule-options > div > div .selector:first-of-type {
+    margin-top: 0px;
+}
+.schedule-options > div > div .selector select {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border:  0px;
+    text-align: center;
+    color: #E382A7;
+    font-family: 'fssemibold';
+    font-size: 14px;
+    cursor: pointer;
+}
+.schedule-options > div > div .selector > span {
+    float: left;
+    margin: 0px;
+    padding: 0px 5px;
+    font-family: 'fssemibold';
+    font-size: 14px;
+    color: #584A29;
+    transition: .3s;
+}
+.schedule-options > div > div .selector > span.width {
+    width: 30px;
+}
+.schedule-options > div > div .selector > span:first-of-type {
+    border-right: 1px solid #E382A7;
+    }
+.schedule-options > div > div .selector > span:last-of-type {
+    border-left: 1px solid #E382A7;
+}
+.schedule-options > div > div .selector > span:nth-child(1) {
+    border-left: 0px;
+}
+.schedule-options > div > div .selector.frequency > select {
+    width: 100%;
+}
+.schedule-options > div > div .selector.time > select {
+    width: 96px;
+}
+.schedule-options > div > div .selector.time > span {
+    padding-left: 8px;
+}
+.schedule-options > div > div .selector.day-week > select {
+    width: 96px;
+}
+.schedule-options > div > div .selector.day-week > span {
+    padding-left: 6px;
+}
+.schedule-options > div > div .selector.day-week:hover > span,
+.schedule-options > div > div .selector.day-month:hover > span,
+.schedule-options > div > div .selector.time:hover > span {
+    opacity: 0.3;
+}
+.schedule-options > div > div .selector:hover {
+    border: 1px solid #F7DDE7;
+}
+.set-schedule-btn {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 3px 0px 1px;
+    border: 0px;
+    color: #ffffff;
+    background-color: #E382A7;
+    cursor: pointer;
+}
+.set-schedule-btn > i {
+    font-size: 18px;
+}
+
+/*
+============================================
+LOGIN
+============================================
+*/
+.access-wrapper {
+    float: left;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #F7F3EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.access-wrapper .access {
+    width: 100%;
+    max-width: 600px;
+}
+
+.access-wrapper .access h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 42px;
+    color: #584A29;
+}
+
+.access-wrapper .access > p {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    padding: 0px 0px 0px 2px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #8E7E58;
+    line-height: 150%;
+}
+
+.access-wrapper .access > div {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+}
+
+.access-wrapper .access > div .access-form-group {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.access-wrapper .access > div .access-form-group > input[type="email"],
+.access-wrapper .access > div .access-form-group > input[type="text"],
+.access-wrapper .access > div .access-form-group > input[type="password"] {
+    float: left;
+    width: 100%;
+    height: 65px;
+    margin: 0px;
+    padding: 0px 20px;
+    background-color: #ffffff;
+    font-family: 'fsbook';
+    font-size: 20px;
+    color: #584a29;
+    border: 0px;
+}
+
+.access-wrapper .access > div .access-action {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.access-wrapper .access > div .access-action > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 23px 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #8E7E58;
+}
+.access-wrapper .access > div .access-action .forgot-password-link {
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #E382A7;
+    margin: 15px 32px 0px;
+    padding: 0px;
+}
+.access-wrapper .access > div .access-action > p > a {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #E382A7;
+}
+.access-wrapper .access > div .access-action > div > button.google-login {
+    position: absolute;
+    right: 185px;
+    top: 0px;
+    width: 65px;
+    height: 65px;
+    background-color: #ffffff;
+    background-image: url(../images/google.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    border: 0px;
+    background-position: center center;
+    cursor: pointer;
+}
+.access-wrapper .access > div .access-action > div > button.submit-form-btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 175px;
+    height: 65px;
+    background-color: #E382A7;
+    border: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+}
+.access-wrapper .access > div .access-action > div > button.submit-form-btn:disabled {
+    background-color: #E8BFCF;
+    cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E %3Cpath d='M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4 L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1 c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1 c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z'/%3E %3C/svg%3E"), pointer;
+}
+
+.access-logo {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-size: 30px;
+    font-weight: 400;
+    color: #C1B497;
+    position: absolute;
+    bottom: 80px;
+}
+
+/* Validation messages */
+.validation-tooltip {
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    margin: 0px;
+    padding: 6px 10px;
+    background-color: #584A29;
+    color: #ffffff;
+    font-family: 'fssemibold';
+    font-size: 13px;
+}
+.validation-tooltip:after {
+    content: "";
+    border-top: 8px solid #584A29;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    right: 10px;
+}
+.validation-tooltip.error {
+    background-color: #E382A7;
+}
+.validation-tooltip.error:after {
+    border-top: 8px solid #e382A7;
+}
+
+.validation-message {
+    display: inline-block;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 0px 0px 42px;
+    
+    color: #ffffff;
+    position: relative;
+}
+.validation-message > span {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 20px;
+}
+.validation-message > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    font-family: 'fsbook';
+    font-size: 14px; 
+}
+.validation-message > p > span {
+    font-family: 'fsbold';
+    font-size: 18px;
+}
+
+/* validation message types  */
+.validation-message.error {
+    background-color: #f9dce7;
+}
+.validation-message.error > span {
+    color: #9a315a;
+}
+.validation-message.error > p {
+    color: #972b54;
+}
+.validation-message.success {
+    background-color: #f0f9dc;
+}
+.validation-message.success > span {
+    color: #5f7729;
+}
+.validation-message.success > p {
+    color: #5f7729;
+}
+
+.validation-message.no-heading > span {
+    top: 12px;
+}
+.validation-message.connect {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+/*
+============================================
+BLOG
+============================================
+*/
+.blog-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.blog-wrapper > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+}
+
+.blog-wrapper > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+
+.blog-wrapper > div > p {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #6c6c6c;
+}
+
+.blog-wrapper .blog-posts {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-wrapper .blog-posts > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.blog-wrapper .blog-posts .blog-post {
+    float: left;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.blog-wrapper .blog-posts .blog-post > img {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.blog-wrapper .blog-posts .blog-post > h2 {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-size: 28px;
+    color: #5b5b5b;
+}
+
+.blog-wrapper .blog-posts .blog-post > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    font-family: 'fsbook';
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+.blog-wrapper .blog-posts .blog-post > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 150%;
+}
+
+.blog-wrapper .blog-posts .blog-post > a {
+    margin: 20px 0px 0px 0px;
+    padding: 7px 15px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'fsbook';
+    font-size: 14px;
+    background-color: #ededed;
+    border-radius: 100px;
+    color: #6c6c6c;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.blog-wrapper .blog-posts .blog-post > a:hover {
+    background-color: #E382A7;
+    color: #ffffff;
+}
+
+.blog-wrapper .post {
+    float: left;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px;
+}
+
+.blog-wrapper .post > span {
+    float: left;
+    margin: 0px;
+    padding: 7px 15px;
+    background-color: #ededed;
+    border-radius: 100px;
+    font-family: 'fsbook';
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+.blog-wrapper .post > h1 {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    text-align: left;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+
+.blog-wrapper .post > div {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+.blog-wrapper .post > div p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    line-height: 150%;
+    color: #6c6c6c;
+    text-align: left;
+}
+
+/*
+============================================
+CHANGELOG
+============================================
+*/
+.changelog-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.changelog-wrapper > div {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+}
+
+.changelog-wrapper > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+
+.changelog-wrapper > div > p {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #6c6c6c;
+}
+
+.changelog-wrapper .changelog-posts {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.changelog-wrapper .changelog-posts > div {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+.changelog-wrapper .changelog-posts .changelog-post {
+    float: left;
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    padding: 0px 0px 40px 0px;
+    border-bottom: 1px solid #ededed;
+}
+
+.changelog-wrapper .changelog-posts .changelog-post:last-of-type {
+    border-bottom: 0px;
+}
+
+.changelog-wrapper .changelog-posts .changelog-post > span {
+    float: left;
+    margin: 0px;
+    padding: 7px 15px;
+    background-color: #ededed;
+    border-radius: 100px;
+    font-family: 'fsbook';
+    font-size: 12px;
+    color: #6c6c6c;
+}
+
+.changelog-wrapper .changelog-posts .changelog-post > h2 {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    text-align: left;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 28px;
+    color: #5b5b5b;
+}
+
+.changelog-wrapper .changelog-posts .changelog-post > div > p {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    line-height: 150%;
+    color: #6c6c6c;
+    text-align: left;
+}
+/*
+============================================
+ADMIN SECTION
+============================================
+*/
+.wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 0px 0px 238px;
+    position: relative;
+}
+
+.sidebar {
+    position: fixed;
+    width: 238px;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0e1627;
+    left: 0px;
+}
+
+.sidebar > ul {
+    float: left;
+    width: 100%;
+    margin: 80px 0px 0px 0px;
+    padding: 0px 40px;
+}
+
+.sidebar > ul > li {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+.sidebar > ul > li > a {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'rreg';
+    font-size: 14px;
+    letter-spacing: .3px;
+}
+
+.sidebar > ul > li > a > span.indicator {
+    margin: 0px 0px 0px 10px;
+    padding: 3px 5px 2px;
+    background-color: #412535;
+    border-radius: 3px;
+    font-family: 'msbold';
+    font-size: 12px;
+    color: #ff5f66;
+
+}
+
+.sidebar > ul > li > a > i {
+    margin-right: 15px;
+    width: 17px;
+    text-align: center;
+}
+.content-wrapper {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.header-admin {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 23px 24px 24px 30px;
+    height: 70px;
+    /*border-bottom: 2px solid #0e1627;*/
+}
+.header-admin > span {
+    float: left;
+    margin: 0px;
+    padding: 2px 0px;
+    font-family: 'msbold';
+    font-size: 18px;
+    color: #121729;;
+}
+.header-admin > a {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    font-size: 22px;
+    color: #4d8af0;
+}
+.posts {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 45px 30px;
+}
+/* Table */
+.cms-table {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px;
+}
+.cms-table .cms-table-header {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 22px 25px 18px 25px;
+    border-radius: 6px 6px 0px 0px;
+    /*background-color: #121729;*/
+}
+.cms-table .cms-table-header > span {
+    color: #b7b7b7;
+    font-family: 'osr', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cms-table > table {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+    /*background-color: #121729;*/
+    color: #121729;
+    text-align: left;
+}
+.cms-table .cms-table-footer {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 15px 25px;
+    border-radius: 0px 0px 6px 6px;
+    /*background-color: #121729;*/
+    border-top: 1px solid #000000;
+}
+.cms-table .cms-table-footer > a {
+    text-decoration: none;
+    color: #626d95;
+    font-family: 'rreg', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    padding-left: 13px;
+    position: relative;
+}
+.cms-table .cms-table-footer > a > i {
+    position: absolute;
+    left: 0px;
+    top: -3px;
+}
+.cms-table > table > thead {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*background-color: #0f1322;*/
+}
+.cms-table > table td, .cms-table > table th {
+    white-space: nowrap;
+}
+.cms-table > table th {
+    padding: 12px 15px 10px;
+    font-size: 12px;
+    color: #626d95;
+    font-weight: 600;
+}
+.cms-table > table td {
+    border-top: 1px solid #000;
+    padding: 11px 15px 9px;
+    font-size: 12px;
+}
+img.cms-table-image {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 100%;
+}
+span.cms-table-value > i {
+    font-size: 14px;
+}
+span.cms-table-value > .cms-flag-small {
+    float: left;
+    margin: 0px 8px 0px 0px;
+    padding: 0px;
+    width: 16px;
+    border-radius: 3px;
+}
+i.green {
+    color: #00e093 !important;
+}
+i.orange {
+    color: #f0825f !important;
+}
+i.blue {
+    color: #4d8af0 !important;
+}
+i.red {
+    color: #ff5f66 !important;
+}
+i.grey {
+    color: #707ea6 !important;
+}
+span.cms-table-name {
+    display: block !important;
+    font-family: 'rreg', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+span.cms-table-status {
+    display: block !important;
+    font-family: 'rreg', sans-serif;
+    font-size: 12px;
+    margin-top: 4px;
+    color: #ccc;
+}
+span.cms-table-indicator {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 5px;
+}
+span.cms-table-indicator.green {
+    background-color: #00e093;
+}
+span.cms-table-indicator.orange {
+    background-color: #f0825f;
+}
+a.cms-table-action {
+    text-decoration: none;
+}
+a.cms-table-action > i {
+    color: #4d8af0;
+}
+.first-cell {
+    padding-left: 25px !important;
+    width: 30px;
+}
+.new-entry {
+    float: left;
+    margin: 0px;
+    padding: 40px 45px;
+    width: 100%;
+}
+.new-entry .ne-form {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 680px;
+}
+.new-entry .ne-form form {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.new-entry .ne-form form .form-group {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+    padding: 0px;
+}
+.new-entry .ne-form form .form-group > span {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 5px 0px;
+    padding: 0px 15px;
+    font-family: 'rreg';
+    font-size: 13px;
+    color: #ffffff;
+}
+.new-entry .ne-form form .form-group > input[type="text"],
+.new-entry .ne-form form .form-group > input[type="email"] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 15px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #18223e;
+}
+.new-entry .ne-form form .form-group > textarea {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #ffffff;
+    height: 200px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #18223e;
+    resize: none;
+}
+.new-entry .ne-form form .form-group .fg-file {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+.new-entry .ne-form form .form-group .fg-file input[type="file"] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: transparent;
+    overflow: hidden;
+    text-indent: -9999px;
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    cursor: pointer ;
+}
+.new-entry .ne-form form .form-group .fg-file > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 11px 40px 11px 15px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #18223e;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+}
+.new-entry .ne-form form .form-group .fg-file > span:before {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    color: #4d8af0;
+}
+
+.new-entry .ne-form form .form-group .fg-select {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #18223e;
+    height: 40px;
+    border-radius: 6px;
+    z-index: 2;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border: 3px solid #18223e;
+}
+.new-entry .ne-form form .form-group .fg-select:before {
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    content: "\f078";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    color: #4d8af0;
+    z-index: 3;
+    pointer-events: none;
+}
+.new-entry .ne-form form .form-group .fg-select select {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 15px;
+    font-family: 'rreg';
+    font-size: 14px;
+    color: #18223e;
+    height: 40px;
+    border-radius: 6px;
+    border: 0px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    -webkit-appearance:none;
+}
+.new-entry .ne-form form .form-group .fg-select select option {
+    font-family: 'rreg', sans-serif;
+    font-size: 26px;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.new-entry .ne-form form .form-group button {
+    float: right;
+}
+.btn {
+    display: inline-block;
+    height: 40px;
+    margin: 0px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 0px;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+.btn.blue {
+    background-color: #4d8af0;
+}
+
+
+/*
+============================================
+SETTINGS
+============================================
+*/
+.settings-wrapper {
+    float: left;
+    width: 100%;
+    padding: 65px;
+    margin: 0px;
+    text-align: center;
+}
+.settings-wrapper > div {
+    display: inline-block;
+    max-width: 900px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.settings-wrapper > div > .main-content {
+    float: left;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+}
+.settings-header {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    min-height: 105px;
+}
+.settings-wrapper h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 28px;
+    color: #5b5b5b;
+}
+.settings-wrapper > span {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #6c6c6c;
+}
+
+.settings-header .sh-user-cont {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 22px 22px 22px 130px;
+    position: relative;
+}
+.settings-header .sh-user-cont .sh-uc-userimage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 105px;
+    height: 105px;
+}
+.settings-header .sh-user-cont .sh-uc-userimage > img {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    border: 3px solid #E1D5D0;
+}
+.settings-header .sh-user-cont > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 28px;
+    color: #5b5b5b;
+}
+
+
+/* Settings Tabs */
+.settings-tabs {
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.settings-tabs label {
+    order: 1;
+    display: block;
+    padding: 0px;
+    margin-right: 50px;
+    cursor: pointer;
+    background: transparent;
+    transition: background ease 0.2s;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+    text-align: left;
+}
+.settings-tabs label:last-of-type {
+    margin-right: 0px;
+}
+.settings-tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem 0px;
+    background: #fff;
+    border-top: 1px solid #E1E1E1;
+    margin-top: 10px;
+}
+.settings-tabs input[type="radio"] {
+    display: none;
+}
+.settings-tabs input[type="radio"]:checked + label {
+    color: #E382A7;
+    font-family: 'fssemibold';
+}
+.settings-tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+
+.settings-tabs .tab .tab-lside {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px 20px 0px 0px;
+}
+.settings-tabs .tab .tab-rside {
+    float: left;
+    width: 50%;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+
+/* Settings: Plan tabs */
+.plan-tabs {
+    float: left;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 240px 0px 0px;
+}
+.plan-tabs label {
+    order: 1;
+    display: block;
+    padding: 0px;
+    margin-right: 50px;
+    cursor: pointer;
+    background: transparent;
+    transition: background ease 0.2s;
+    font-family: 'robotoregular';
+    font-size: 14px;
+    color: #95919D;
+    text-align: left;
+}
+.plan-tabs .tab {
+    order: 99;
+    flex-grow: 1;
+    width: 100%;
+    display: none;
+    padding: 1rem 0px;
+    background: #fff;
+    border-top: 1px solid #E1E1E1;
+    margin-top: 10px;
+}
+.plan-tabs input[type="radio"] {
+    display: none;
+}
+.plan-tabs input[type="radio"]:checked + label {
+    color: #4A4134;
+    font-family: 'robotoregular'
+}
+.settings-tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+
+/* Settings form */
+.settings-form {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.settings-form > form > .settings-form-group {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    position: relative;
+}
+.settings-form > form > .settings-form-group > p {
+    float: left;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.settings-form > form > .settings-form-group > input[type='text'] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+}
+.settings-form > form > .settings-form-group > input[type='password'] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'fsbook';
+    font-size: 16px;
+    color: #584a29;
+}
+.settings-form > form > .settings-form-group > input[type='text']:disabled {
+    background-color: #faf8f5;
+    cursor: no-drop;
+    cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E %3Cpath d='M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4 L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1 c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1 c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z'/%3E %3C/svg%3E"), pointer;
+}
+.settings-form > form > .settings-form-group > input[type='password']:disabled {
+    background-color: #faf8f5;
+    cursor: no-drop;
+    cursor: url("data:image/svg+xml,%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve'%3E %3Cpath d='M443.6,387.1L312.4,255.4l131.5-130c5.4-5.4,5.4-14.2,0-19.6l-37.4-37.6c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4 L256,197.8L124.9,68.3c-2.6-2.6-6.1-4-9.8-4c-3.7,0-7.2,1.5-9.8,4L68,105.9c-5.4,5.4-5.4,14.2,0,19.6l131.5,130L68.4,387.1 c-2.6,2.6-4.1,6.1-4.1,9.8c0,3.7,1.4,7.2,4.1,9.8l37.4,37.6c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1L256,313.1l130.7,131.1 c2.7,2.7,6.2,4.1,9.8,4.1c3.5,0,7.1-1.3,9.8-4.1l37.4-37.6c2.6-2.6,4.1-6.1,4.1-9.8C447.7,393.2,446.2,389.7,443.6,387.1z'/%3E %3C/svg%3E"), pointer;
+}
+.disabled {
+    pointer-events: none;
+}
+
+.settings-form > form > .settings-form-group > input[type='number'] {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #4A4134;
+}
+.settings-form > form > .settings-form-group > textarea {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: 1px solid #E1D5D0;
+    font-family: 'robotoregular';
+    font-size: 16px;
+    color: #4A4134;
+    height: 145px;
+    resize: none;
+}
+.settings-formm > form > .settings-form-group > div {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.settings-form > form > .settings-form-group > button {
+    float: left;
+    width: 120px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #E382A7;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    border: 0px;
+}
+.settings-form > form > .settings-form-group.settings-last-group {
+    padding: 14px 120px 14px 0px;
+}
+.settings-form > form > .settings-form-group .validation-tooltip {
+    top: -5px;
+}
+.settings-checkbox {
+    float: left;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.settings-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: initial;
+    border: 1px solid #E1D5D0;
+}
+.settings-checkbox:hover input ~ .checkmark {
+    background-color: #eee;
+}
+.settings-checkbox input:checked ~ .checkmark {
+    background-color: #FFB54D;
+    border: 1px solid #FFB54D;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+.settings-checkbox input:checked ~ .checkmark:after {
+    display: block;
+
+}
+.settings-checkbox .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.settings-checkbox-label {
+    float: left;
+    margin: 0px 0px 10px 0px;
+    padding: 4px 10px 4px 0px;
+    font-family: 'robotoregular';
+    font-size: 12px;
+    color: #9D9291;
+}
+
+
+.settings-account-delete {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+.settings-account-delete > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 17px;
+    color: #5b5b5b;
+}
+.settings-account-delete > p {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.settings-account-delete > a.delete-account {
+    float: left;
+    width: 150px;
+    height:31px;
+    border-radius: 100px;
+    background-color: #D9434D;
+    color: #ffffff;
+    font-family: "fssemibold";
+    font-size: 13px;
+    text-decoration: none;
+    padding: 7px 15px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.5;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+.settings-account-delete > a.delete-account:hover {
+    opacity: 1;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.settings-form > form > .settings-form-group.settings-checkbox-group {
+    background-color: #F7F3EE;
+    border-radius: 15px;
+    padding: 15px;
+    height: 50px;
+    margin-top: 10px;
+}
+.scg-inner {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+label.settings-checkbox {
+    float: left;
+    display: block;
+    position: absolute;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 0px;
+    left: 0px;
+}
+label.settings-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+label.settings-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-sizing: initial;
+    border: 1px solid #E1D5D0;
+}
+label.settings-checkbox:hover input ~ .checkmark {
+    background-color: #eee;
+}
+label.settings-checkbox input:checked ~ .checkmark {
+    background-color: #FFB54D;
+    border: 1px solid #FFB54D;
+}
+label.settings-checkbox:after {
+    content: "";
+    position: absolute;
+    display: block;
+}
+label.settings-checkbox input:checked ~ .checkmark:after {
+    display: block;
+
+}
+label.settings-checkbox .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.settings-checkbox-label {
+    float: left;
+    margin: 0px;
+    padding: 1px 10px 1px 30px;
+    font-family: 'robotoregular';
+    font-size: 14px;
+    color: #9D9291;
+}
+.settings-image-form {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.settings-image-form > input[type="file"] {
+    float: left;
+    width: 105px;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0;
+}
+.flag-text { margin-left: 10px; }
+
+/* Billing Tab  */
+.active-subscription {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+.active-subscription > h2 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px 20px 10px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 20px;
+    color: #5b5b5b;
+}
+.active-subscription > span {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 10px;
+    font-family: 'fsbook';
+    font-size: 13px;
+    color: #6c6c6c;
+}
+.active-subscription > p {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 20px 10px 0px 10px;
+    font-family: 'fsbold';
+    font-size: 28px;
+    color: #5b5b5b;
+    border-top: 1px solid #ededed;
+}
+.active-subscription > div {
+    float: left;
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px 0px;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.active-subscription > div > span {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.active-subscription > div > span:first-of-type {
+    margin-top: 0px;
+}
+.active-subscription > div > p {
+    float: left;
+    width: 100%;
+    margin: 5px 10px 0px 10px;
+    padding: 0px;
+    font-family: 'fsbold';
+    color: #5b5b5b;
+    font-size: 16px;
+}
+.active-subscription > a {
+    float: left;
+    margin: 0px 0px 15px 10px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 12px;
+    color: #6c6c6c;
+    clear: both;
+}
+
+.pick-plan {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+.pick-plan > h2 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 10px 20px 10px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 20px;
+    color: #5b5b5b;
+    border-bottom: 1px solid #ededed;
+}
+.pick-plan .plan-tabs {
+    padding: 0px;
+    margin: 15px 0px 0px;
+}
+.pick-plan .plan-tabs .tab {
+    margin-top: 15px;
+}
+.pick-plan .plan-tabs > label {
+    float: left;
+    margin: 0px;
+    padding: 0px 10px;
+    font-family: 'fsbook';
+    font-size: 14px;
+    color: #6c6c6c;
+}
+.pick-plan .plan-tabs input[type="radio"]:checked + label {
+    font-family: 'fssemibold';
+    font-size: 14px;
+    color: #E382A7;
+}
+.pick-plan .plan-tabs .tab > h3 {
+    float: left;
+    width: 100%;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 10px;
+    font-family: 'fsbold';
+    color: #5b5b5b;
+    font-size: 36px;
+}
+.pick-plan .plan-tabs .tab > span {
+    float: left;
+    width: 100%;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 10px;
+    font-family: 'fsbook';
+    font-size: 13px;
+    color: #6c6c6c;
+}
+.pick-plan .plan-tabs .tab > span.discount {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #aeaeae;
+}
+.pick-plan .plan-tabs .tab > h3.discounted {
+    margin-top: 5px;
+}
+.pick-plan .plan-tabs .tab > ul {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px;
+}
+.pick-plan .plan-tabs .tab > ul > li {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0px;
+    list-style: none;
+}
+.pick-plan .plan-tabs .tab > ul > li > span {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+.pick-plan .plan-tabs .tab > ul > li > span.free-months {
+    font-family: 'fsbold';
+    color: #E382A7;
+}
+.pick-plan .plan-tabs .tab > ul > li > span > i {
+    color: #E382A7;
+}
+.pick-plan .plan-tabs .tab > a {
+    float: left;
+    width: 150px;
+    height: 40px;
+    margin: 20px 0px 0px 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #E382A7;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    color: #ffffff;
+    border: 0px;
+    text-align: center;
+}
+/*
+============================================
+TERMS PAGES
+============================================
+*/
+.terms-container {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.terms-container > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 650px;
+    margin: 80px 0px 0px 0px;
+    padding: 0px 20px 80px;
+    text-align: left;
+}
+.terms-container > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbold';
+    font-size: 36px;
+}
+.terms-container > div > h2 {
+    float: left;
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbold';
+    font-size: 26px;
+}
+.terms-container > div > p {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    line-height: 150%;
+}
+.terms-container > div > ol {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+.terms-container > div > ol > li {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 16px;
+    line-height: 150%;
+    list-style: ;
+}
+.terms-container > div > ol > li > a {
+    text-decoration: none;
+    color: #E382A7;
+    font-family: 'fsbold';
+}
+/*
+============================================
+POST-STRIPE
+============================================
+*/
+.post-stripe-wrapper {
+    float: left;
+    width: 100%;
+    margin: 120px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+}
+.post-stripe-wrapper > div {
+    display: inline-block;
+    width: 100%;
+    max-width: 900px;
+}
+.post-stripe-wrapper > div > img {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+}
+.post-stripe-wrapper > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fssemibold';
+    font-weight: 400;
+    font-size: 34px;
+    color: #5b5b5b;
+}
+.post-stripe-wrapper > div > p {
+    float: left;
+    width: 100%;
+    margin: 8px 0px 0px 0px;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #6c6c6c;
+}
+.post-stripe-wrapper > div > p:last-of-type {
+    margin-top: 40px;
+}
+.post-stripe-wrapper > div > span {
+    float: left;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: #6c6c6c;
+    font-family: 'fsbook';
+}
+
+/*
+============================================
+404
+============================================
+*/
+.wrapper-404 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.wrapper-404 > div {
+    display: inline-block;
+    width: 100%;
+    margin: 180px 0px 0px 0px;
+    padding: 0px;
+    max-width: 400px;
+}
+.wrapper-404 > div > h1 {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'fsbold';
+    font-size: 142px;
+    color: #584A29;
+}
+.wrapper-404 > div > span {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 0px 0px ;
+    padding: 0px;
+    font-family: 'fsbook';
+    font-size: 18px;
+    color: #b0a382;
+    letter-spacing: 15px;
+}
+
+/*
+============================================
+RESPONSIVENESS
+============================================
+*/
+@media screen and (max-width: 1170px) {
+    .hero-section {
+        padding: 150px 70px;
+    }
+    .hero-section > div {
+        padding: 0px 455px 0px 0px;
+    }
+    .hero-section > div .hs-info > span {
+        font-size: 18px;
+    }
+    .hero-section > div .hs-info > h1 {
+        font-size: 38px;
+    }
+    .hero-section > div .hs-info > p {
+        font-size: 18px;
+        max-width: 490px;
+    }
+    .hero-section > div .hs-info > span:last-of-type {
+        font-size: 14px;
+    }
+    .hero-section > div > img {
+        right: -130px;
+    }
+    .sources-showcase > div h2 {
+        font-size: 30px;
+    }
+    .sources-showcase > div p {
+        font-size: 18px;
+    }
+    .brief-info > div .brief-info-tile > div h3 {
+        font-size: 21px;
+    }
+    .brief-info > div .brief-info-tile > div p {
+        font-size: 18px;
+    }
+    .content-creator-cta > div p {
+        font-size: 18px; 
+    }
+}
+@media screen and (max-width: 1080px) {
+    .hero-section > div {
+        padding: 0px 410px 0px 0px;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group {
+        padding: 10px 160px 10px 10px;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group > input[type="text"] {
+        padding: 0px 10px;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group > button {
+        width: 150px;
+    }
+    .brief-info > div .brief-info-tile > div h3 {
+        font-size: 18px;
+    }
+    .brief-info > div .brief-info-tile > div p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 980px) {
+    .hero-section {
+        padding: 90px 70px 90px 30px;
+    }
+    .hero-section > div {
+        padding: 0px 330px 0px 0px;
+    }
+    .hero-section > div > img {
+        width: 450px;
+    }
+    .hero-section > div .hs-info > h1 {
+        font-size: 36px;
+    }
+    .hero-section > div .hs-info > p {
+        font-size: 16px;
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .brief-info {
+        padding: 60px 0px;
+    }
+    .brief-info > div {
+        text-align: center;
+    }
+    .brief-info > div .brief-info-tile {
+        width: 50%;
+        display: inline-block;
+        float: none;
+        padding: 30px;
+        min-height: 300px;
+    }
+    .brief-info > div .brief-info-tile > div > h3 {
+        font-size: 21px;
+    }
+    .brief-info > div .brief-info-tile > div p {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 865px) {
+    .content-creator-cta > div {
+        padding: 0px 240px 0px 60px;
+    }
+    .content-creator-cta > div p {
+        max-width: 400px;
+    }
+    .content-creator-cta > div a {
+        top: 25px;
+        right: 55px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .hero-section > div {
+        padding: 0px 230px 0px 0px;
+    }
+    .hero-section > div > img {
+        width: 400px;
+        top: -25px;
+        right: -180px;
+    }
+    .access-wrapper {
+        padding: 0px 20px;
+    }
+    .access-wrapper .access h1 {
+        font-size: 32px;
+    }
+    .access-wrapper .access > div .access-form-group > input[type="email"], 
+    .access-wrapper .access > div .access-form-group > input[type="text"], 
+    .access-wrapper .access > div .access-form-group > input[type="password"] {
+        height: 50px;
+        font-size: 16px;
+    }
+    .access-wrapper .access > div .access-action > p {
+        font-size: 14px;
+        padding: 17px 0px;
+    }
+    .access-wrapper .access > div .access-action > div > button.google-login {
+        width: 50px;
+        height: 50px;
+        background-size: 25px 25px;
+    }
+    .access-wrapper .access > div .access-action > div > button.submit-form-btn {
+        height: 50px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .content-creator-cta > div {
+        padding: 0px 220px 0px 30px;
+    }
+    .content-creator-cta > div a {
+        right: 30px;
+    }
+    .pick-source {
+        padding: 40px 10px;
+    }
+}
+@media screen and (max-width: 745px) {
+    .hero-section {
+        padding: 90px 30px;
+    }
+    .hero-section > div {
+        padding: 0px;
+    }
+    .hero-section > div > img { 
+        width: 210px;
+        top: -45px;
+        right: 20px;
+    }
+    .brief-info > div .brief-info-tile {
+        min-height: 265px;
+    }
+    .brief-info > div .brief-info-tile > div > h3 {
+        font-size: 18px;
+    }
+    .brief-info > div .brief-info-tile > div p {
+        font-size: 16px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .hero-section > div > img {
+        width: 180px;
+        top: -20px;
+        right: 0px;
+    }
+    .brief-info > div .brief-info-tile {
+        min-height: 290px;
+    }
+    .content-creator-cta > div p {
+        font-size: 16px;
+    }
+    .content-creator-cta > div a {
+        width: 140px;
+        padding: 24px 20px;
+    }
+    .pick-source > div > div > ul > li {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .hero-section > div > img {
+        display: none;
+    }
+    .hero-section > div .hs-info > p {
+        max-width: 580px;
+    }
+    .brief-info > div .brief-info-tile {
+        width: 100%;
+    }
+    .brief-info > div .brief-info-tile > div > h3 {
+        font-size: 21px;
+    }
+    .brief-info > div .brief-info-tile > div p {
+        font-size: 18px;
+    }
+    .content-creator-cta > div {
+        padding: 0px 30px;
+        text-align: center;
+    }
+    .content-creator-cta > div a {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: inline-block;
+        margin-top: 35px;
+        height: 55px;
+        padding: 19px 20px;
+    }
+    .content-creator-cta > div p {
+        max-width: 100%;
+    }
+    .create-newsletter-wrapper > div > h1 {
+        font-size: 28px;
+    }
+    .create-newsletter-wrapper > div > p {
+        font-size: 16px;
+    }
+    .cn-source .cn-src-title > h2 {
+        font-size: 20px;
+    }
+    .cn-source .cn-src-content-wrapper .cn-src-content > p {
+        font-size: 15px;
+    }
+    .pick-source > div > span {
+        font-size: 22px;
+    }
+    .settings-tabs .tab .tab-lside {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .settings-tabs .tab .tab-rside {
+        margin-top: 40px;
+        border-top: 1px solid #ededed;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .header > div .navigation > ul > li {
+        padding: 0px 15px;
+    }
+    .pick-source > div > p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .header > div .navigation > ul > li > a {
+        font-size: 15px;
+    }
+    .header > div {
+        text-align: center;
+    }
+    .header > div > a {
+        display: inline-block;
+        float: none;
+    }
+    .header > div .navigation {
+        width: 100%;
+        text-align: center;
+    }
+    .header > div .navigation > ul {
+        float: none;
+        display: inline-block;
+        width: auto;
+    }
+    .header.loggedin > div > a {
+        float: left;
+        display: initial;
+    }
+    .header.loggedin > div .navigation {
+        width: auto;
+        text-align: initial;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .hero-section > div .hs-info {
+        text-align: center;
+    }
+    .hero-section > div .hs-info > span {
+        font-size: 16px;
+        width: initial;
+        display: inline-block;
+        float: none;
+    }
+    .hero-section > div .hs-info > h1 {
+        font-size: 32px;
+    }
+    .hero-section > div .hs-info > p {
+        font-size: 15px;
+    }
+    .hero-section > div .hs-info > span:last-of-type {
+        max-width: 250px;
+        padding: 0px;
+    }
+    .hero-section > div .hs-info > span:last-of-type  > img {
+        display: none;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group {
+        padding: 10px 145px 10px 10px;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group > input[type="text"] {
+        font-size: 16px;
+        height: 50px;
+    }
+    .hero-section > div .hs-info .request-access .ra-form-group > button {
+        height: 50px;
+        font-size: 14px;
+        width: 135px;
+    }
+    .sources-showcase {
+        padding: 80px 30px;
+    }
+    .sources-showcase > div p {
+        font-size: 15px;
+    }
+    .access-wrapper .access h1 {
+        text-align: center;
+    }
+    .access-wrapper .access > div .access-action {
+        text-align: center;
+    }
+    .access-wrapper .access > div .access-action > div {
+        float: left;
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+        text-align: center;
+        font-size: 0;
+    }
+    .access-wrapper .access > div .access-action > div > button.google-login {
+        display: inline-block;
+        position: relative;
+        top: initial;
+        right: initial;
+        top: -5px;
+    }
+    .access-wrapper .access > div .access-action > div > button.submit-form-btn {
+        display: inline-block;
+        position: relative;
+        top: initial;
+        right: initial;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .access-wrapper .access > div .access-action .forgot-password-link {
+        float: none;
+        display: inline-block;
+        position: relative;
+        bottom: initial;
+    }
+    .access-wrapper .access > div .access-action > p {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .sources-showcase > div {
+        text-align: center;
+    }
+    .sources-showcase > div h2 {
+        float: none;
+        display: inline-block;
+        max-width: 250px;
+    }
+    .content-creator-cta {
+        padding: 100px 0px;
+    }
+    .settings-tabs label {
+        margin-right: 40px;
+    }
+}
